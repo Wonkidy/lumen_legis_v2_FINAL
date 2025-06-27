@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="fr"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Lumen Legis - Plateforme juridique</title> 
+  <style>
+        :root {
+            --violet-principal: #6a0dad;
+            --violet-clair: #9b59b6;
+            --violet-fonce: #4b0082;
+            --or-accent: #ffd700;
+            --blanc: #ffffff;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, var(--violet-principal) 0%, var(--violet-fonce) 100%);
+            color: var(--blanc);
+            min-height: 100vh;
+            line-height: 1.6;
+            padding: 0;
+        }
+        
+        
+        header {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+        }
+        
+        nav a {
+            color: var(--blanc);
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+        
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        
+        .hrr {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+        
+        .hrr h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        
+        .hrr h1 span {
+            color: var(--or-accent);
+            font-size: 3rem;
+        }
+        
+        .hrr p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+        
+    
+        .envellope-bouton {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+        
+        .boutooon {
+            background: var(--violet-principal);
+            color: var(--blanc);
+            padding: 12px 25px;
+            border: 2px solid var(--or-accent);
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .btn:hover {
+            background: var(--violet-fonce);
+        }
+        
+        
+        .info {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            margin: 50px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            border-left: 4px solid var(--or-accent);
+        }
+        
+        .info h2 {
+            color: var(--or-accent);
+            margin-bottom: 15px;
+        }
+        
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.4);
+            margin-top: 50px;
+        }
+        
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .btn-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style> 
+ </head> 
+ <body> 
+  <header> 
+   <div class="logo">
+    Lumen Legis
+   </div> 
+   <nav> 
+    <ul> 
+     <li><a href="index.html">Accueil</a></li> 
+     <li><a href="apropos.html">À propos</a></li> 
+     <li><a href="services.html">Services</a></li> 
+     <li><a href="contact.html">Contact</a></li> 
+     <li><a href="specialisations.html">Spécialisations</a></li> 
+    </ul> 
+   </nav> 
+  </header>  
+  <main class="hero"> 
+   <h1><span>L</span>umen Legis</h1> 
+   <p> Votre plateforme de confiance pour des services juridiques en RDC. Nous mettons en relation les citoyens avec des avocats compétents pour apporter justice et soutien. </p> 
+   <div class="btn-container"> <a href="inscription_client.php" class="btn">Inscription Client</a> <a href="inscription_avocat.php" class="btn">Inscription Avocat</a> 
+   </div> 
+  </main> 
+  <section class="info"> 
+   <h2>Le droit en RDC</h2> 
+   <p> La République démocratique du Congo suit un système de droit civil, héritage historique du Code Napoléon et du droit belge. La Constitution garantit l'indépendance du pouvoir judiciaire, mais le système fait face à de nombreux défis comme les lenteurs judiciaires et la corruption. </p> 
+  </section> <!-- Pied de page --> 
+  <footer> 
+   <p>© 2025 Lumen Legis. Tous droits réservés.</p> 
+  </footer> 
+ </body>
+</html>
